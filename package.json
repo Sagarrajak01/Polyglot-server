@@ -1,0 +1,19 @@
+{
+  "name": "polyglot-server",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "crc": "^4.3.2",
+    "express": "^5.1.0",
+    "multer": "^2.0.2",
+    "path": "^0.12.7"
+  }
+}

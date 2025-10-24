@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Polyglot File Creator & Checker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Create Polyglot Image</h1>
+    <form id="createPolyglotForm" enctype="multipart/form-data">
+      <label for="imagetype">Select Image Type:</label>
+      <select id="imagetype" name="imagetype" required>
+        <option value="" disabled selected>Select image type</option>
+        <option value="png">PNG</option>
+        <option value="jpg">JPG</option>
+      </select>
+
+      <label for="imagefile">Select Image File:</label>
+      <input type="file" id="imagefile" name="imagefile" accept=".png,.jpg,.jpeg" required />
+
+      <label for="textdata">Text to Embed (optional):</label>
+      <textarea id="textdata" name="textdata" rows="3" placeholder="Enter metadata or comment..."></textarea>
+
+      <label for="zipfile">Append ZIP (optional):</label>
+      <input type="file" id="zipfile" name="zipfile" accept=".zip" />
+
+      <button type="submit">Create Polyglot</button>
+    </form>
+    
+    <div id="createResult" aria-live="polite"></div>
+
+    <hr />
+
+    <h1>Check Polyglot File</h1>
+    <form id="checkPolyglotForm" enctype="multipart/form-data">
+      <label for="checkfile">Select File:</label>
+      <input type="file" id="checkfile" name="file" required />
+      <button type="submit">Check Polyglot</button>
+    </form>
+    
+    <div id="imagePreviewArea" aria-live="polite"></div>
+
+    <div id="checkResult" aria-live="polite"></div>
+  </main>
+
+  <script src="polyglot.js"></script>
+</body>
+</html>

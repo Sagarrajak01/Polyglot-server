@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7faff;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+main {
+  background: #fff;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+h1 {
+  text-align: center;
+  color: #0078d4;
+  margin: 1.5rem 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+form {
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0 0.2rem 0;
+  font-weight: 500;
+}
+
+input[type="file"],
+textarea,
+select {
+  width: 100%;
+  margin-bottom: 0.8rem;
+  border: 1px solid #bbdffe;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 1rem;
+  background-color: #f8fbff;
+  color: #0078d4;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  background-color: #0078d4;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #005ea6;
+}
+
+textarea {
+  min-height: 60px;
+}
+
+button {
+  background: #0078d4;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #005ea6;
+}
+
+#checkResult {
+  margin-top: 1rem;
+  background: #e9f0fb;
+  border-left: 5px solid #0078d4;
+  border-radius: 6px;
+  padding: 1rem;
+  color: #003c64;
+  min-height: 40px;
+  word-break: break-word;
+}
+
+select:focus,
+textarea:focus,
+input[type="file"]:focus {
+  border-color: #0078d4;
+  outline: none;
+}
+
+/* Responsive for mobile */
+@media (max-width: 480px) {
+  main {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  button,
+  input[type="file"],
+  textarea,
+  select {
+    font-size: 0.95rem;
+  }
+}
